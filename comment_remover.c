@@ -24,11 +24,7 @@ void print()
     {
         if (line[i] == '\\' && line[i+1] == '\\')
         {
-            while (line[i] != '\n')
-            {
-                i++;
-            }
-
+            while (line[i] != '\n') {i++;}
             i++;
         }
         printf("%c", line[i]);
